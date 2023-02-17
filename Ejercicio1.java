@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Ejercicio1 {
-    //haz un algoritmo que calcule la media de notas que introduzca el usuario mediante Scanner,se han realizado 4 examenes y ninguna nota puede ser negativa
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int nota1, nota2, nota3, nota4;
