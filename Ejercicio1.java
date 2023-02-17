@@ -19,6 +19,7 @@ public class Ejercicio1 {
     }
 }
 */
+/*
 public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -34,5 +35,27 @@ public class Ejercicio1 {
         }
         media = media / contador;
         System.out.println("La media de las notas es: " + media);
+    }
+}*/
+public class Ejercicio1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int nota, contador = 0, contador2 = 0;
+        double media = 0, porcentaje;
+        System.out.println("Introduce la nota del primer examen");
+        nota = sc.nextInt();
+        while (nota != -1) {
+            media += nota;
+            contador++;
+            if (nota > 10) {
+                contador2++;
+            }
+            System.out.println("Introduce la nota del siguiente examen");
+            nota = sc.nextInt();
+        }
+        media = media / contador;
+        porcentaje = (contador2 * 100) / contador;
+        System.out.println("La media de las notas es: " + media);
+        System.out.println("El porcentaje de notas superiores a 10 es: " + porcentaje);
     }
 }
